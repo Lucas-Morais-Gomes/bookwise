@@ -30,5 +30,3 @@
         </section>
     </main>
 </body>
-
-</html>

@@ -1,3 +1,4 @@
+
 <?php
 
 require 'dados.php';
@@ -8,5 +9,4 @@ $filtrado = array_filter($Livros, fn($livro) => $livro['id'] == $id);
 
 $livro = array_pop($filtrado);
 
-$view = 'livro';
-require "views/template/app.view.php";
+view('livro');

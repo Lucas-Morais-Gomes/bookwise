@@ -1,4 +1,10 @@
+
 <?php
+
+function view($view)
+{
+    require "views/template/app.view.php";
+};
 
 function dd(...$dump)
 {
@@ -12,9 +18,11 @@ function dd(...$dump)
 function abort($code)
 {
     http_response_code($code);
-    echo "Página não encontrada";
+    view($code);
     die();
 }
+
+
 
 function loadController()
 {

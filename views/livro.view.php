@@ -8,4 +8,3 @@
         </div>
     </div>
     <div class="text-sm mt-2"><?= $livro['descricao'] ?></div>
-</div>

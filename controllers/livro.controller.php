@@ -9,4 +9,4 @@ $filtrado = array_filter($Livros, fn($livro) => $livro['id'] == $id);
 
 $livro = array_pop($filtrado);
 
-view('livro');
+view('livro', compact('livro'));

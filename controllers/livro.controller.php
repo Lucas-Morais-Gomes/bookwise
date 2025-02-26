@@ -1,12 +1,5 @@
-
 <?php
 
-require 'dados.php';
-
-$id = ($_REQUEST['id']);
-
-$filtrado = array_filter($Livros, fn($livro) => $livro['id'] == $id);
-
-$livro = array_pop($filtrado);
+$livros = (new Livro)->getLivros($_REQUEST['id']);
 
 view('livro', compact('livro'));
